@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="de.codeelements.splashdemo">
+
+    <uses-sdk tools:overrideLibrary="androidx.core.splashscreen"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:icon="@mipmap/ic_splash_launcher"
+        android:theme="@style/App.Theme.Main">
+        <activity
+            android:name="de.codeelements.splashdemo.ActivityMain"
+            android:exported="true"
+            android:theme="@style/App.Theme.Starting"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="de.codeelements.splashdemo.Activity2"
+            android:exported="false"
+            android:theme="@style/App.Theme.Main"
+            >
+        </activity>
+
+
+    </application>
+
+</manifest>
+
+
+

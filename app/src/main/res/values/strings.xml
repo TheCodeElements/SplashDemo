@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Splash Demo</string>
+    <string name="txt_mainactivity"><![CDATA[<- MainActivity]]></string>
+    <string name="txt_activity_2"><![CDATA[-> Activity 2]]></string>
+</resources>
