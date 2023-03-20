@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/solid_blue"
 
+    android:background="?android:attr/colorBackground"
     tools:context="de.codeelements.splashdemo.ActivityMain">
 
     <TextView

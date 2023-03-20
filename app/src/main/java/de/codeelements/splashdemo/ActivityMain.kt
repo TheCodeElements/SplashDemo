@@ -3,9 +3,12 @@ package de.codeelements.splashdemo
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.ContentFrameLayout
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import de.codeelements.splashdemo.databinding.ActivityMainBinding
 
 
@@ -18,9 +21,11 @@ class ActivityMain : AppCompatActivity() {
 
 //        if(savedInstanceState==null) {
 //            keep = false
-//
+
+            val splashScreen = installSplashScreen()
+
 //            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                setTheme(R.style.Theme_App_Starting);
+////                setTheme(R.style.App_Theme_Main);
 //                val splashScreen = installSplashScreen()
 //
 //                splashScreen.setKeepOnScreenCondition {
@@ -32,12 +37,13 @@ class ActivityMain : AppCompatActivity() {
 //                }, 3000L)
 //
 //            } else {
-//                setTheme(R.style.App_Theme);
+//                setTheme(R.style.App_Theme_Main);
 //            }
 //
 //        }
 //        else
-            setTheme(R.style.App_Theme_Main);
+//            setTheme(R.style.App_Theme_Main);
+//        }
 
         super.onCreate(savedInstanceState);
 

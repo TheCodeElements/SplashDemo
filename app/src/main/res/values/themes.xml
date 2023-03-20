@@ -9,11 +9,14 @@
     <style name="App.Theme.Main" parent = "Theme.AppCompat.Light.NoActionBar">
 <!--        <item name="android:colorBackground">@color/background</item>-->
         <item name="android:windowIsTranslucent">false</item> // true works, but crashes on android 8
+        <item name="android:colorBackground">#00FFFF</item>
     </style>
 
 
     <style name="App.Theme.MainTransparent" parent = "App.Theme.Main">
-<!--        <item name="android:windowIsTranslucent">true</item> // nothing works here-->
+        <item name="android:windowIsTranslucent">true</item> // nothing works here
+        <item name="android:colorBackground">#00FF00</item>
+
     </style>
 
     <style name="App.Theme.Starting" parent="Theme.SplashScreen">
